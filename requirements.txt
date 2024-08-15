@@ -1,0 +1,5 @@
+streamlit
+nltk
+groq
+deep_translator
+st_audiorec
