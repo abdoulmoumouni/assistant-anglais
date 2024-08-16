@@ -12,6 +12,7 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 # Load the NLTK data needed for tokenization and stopword removal
 nltk.download('stopwords')
 nltk.download('cmudict')
+nltk.download('punkt')
 #from st_audiorec import st_audiorec
 
 
