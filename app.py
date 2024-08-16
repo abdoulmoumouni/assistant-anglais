@@ -13,6 +13,7 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 nltk.download('stopwords')
 nltk.download('cmudict')
 nltk.download('punkt')
+nltk.download('wordnet')
 #from st_audiorec import st_audiorec
 
 
