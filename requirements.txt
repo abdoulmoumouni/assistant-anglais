@@ -2,3 +2,4 @@ streamlit
 nltk
 groq
 deep_translator
+gtts
