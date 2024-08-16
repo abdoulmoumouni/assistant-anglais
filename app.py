@@ -3,16 +3,12 @@ import streamlit as st
 import os
 from deep_translator import GoogleTranslator
 import nltk
-# nltk.download('punkt_tab')
 from nltk.corpus import wordnet
 from nltk.corpus import cmudict
 import random
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
-# Load the NLTK data needed for tokenization and stopword removal
-# nltk.download('stopwords')
-# nltk.download('cmudict')
-from st_audiorec import st_audiorec
+#from st_audiorec import st_audiorec
 
 
 
@@ -264,7 +260,7 @@ def practice_listening2(file_content):
 
 
 def assistant_anglais(file_content):
-    tabs = st.tabs(["Translation","Vocabulaire","Compréhension", "Questions-réponses","Resumé", "Guided composition","Listning"])
+    tabs = st.tabs(["Translation","Vocabulaire","Compréhension", "Questions-réponses","Resumé", "Guided composition"])
 
     with tabs[0]:
         st.write("### Translation")
@@ -418,13 +414,13 @@ def assistant_anglais(file_content):
                 for word, freq in most_common_words:
                     if len(word)>1:
                         st.write(f"{word}: {freq} fois")
-    with tabs[6]:
-        practice_listening2(file_content)
+    # with tabs[6]:
+    #     practice_listening2(file_content)
         
-        wav_audio_data = st_audiorec()
+    #     wav_audio_data = st_audiorec()
 
-        if wav_audio_data is not None:
-            st.audio(wav_audio_data, format='audio/wav')
+    #     if wav_audio_data is not None:
+    #         st.audio(wav_audio_data, format='audio/wav')
         
 
         
