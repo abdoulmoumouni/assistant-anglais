@@ -238,7 +238,6 @@ def vocabulaire_module():
 
                     st.write("---")
 
-import playsound  # You might need to install it: pip install playsound
 from gtts import gTTS
 def practice_listening2(file_content):
     """
