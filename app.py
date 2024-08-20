@@ -19,15 +19,11 @@ nltk.download('wordnet')
 
 
 st.set_page_config(
-    page_title="Definitions",
+    page_title="Assistant-d'Anglais",
     page_icon=":book:",
     layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-        "Get Help": "https://www.streamlit.io/help",
-        "Report a bug": "https://github.com/streamlit/streamlit/issues",
-        "About": "# This is a header. This is an *extremely* cool app!"
-    }
+    initial_sidebar_state="expanded"
+    
 )
 
 # Use any translator you like, in this example GoogleTranslator
